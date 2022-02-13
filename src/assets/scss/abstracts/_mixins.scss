@@ -1,0 +1,10 @@
+@mixin custom-btn {
+  background : linear-gradient(90deg , #da6cff,#923FFB) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  height: 3.5rem;
+}

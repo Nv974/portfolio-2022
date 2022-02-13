@@ -1,0 +1,32 @@
+@import "src/assets/scss/abstracts/mixins";
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  img {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  &__description {
+    width: 30%;
+    &__title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      text-align: start;
+    }
+    &__text {
+      text-align: start;
+      font-size: 1.2rem;
+    }
+
+    &__resume {
+      @include custom-btn;
+      width: 15rem;
+      margin-top: 2rem;
+    }
+  }
+}

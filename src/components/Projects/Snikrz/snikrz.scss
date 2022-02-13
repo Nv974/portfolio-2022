@@ -1,0 +1,26 @@
+.snikrz {
+  &__content {
+    position: relative;
+    img {
+      z-index: 1;
+    }
+    &__background {
+      width: 800px;
+      height: 400px;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      z-index: -1;
+      background: linear-gradient(90deg, #BE6CE4 , #653DB6 );
+      transition: background 0.5s;
+    }
+    img {
+      width: 800px;
+    }
+    &__description {
+      width: 800px;
+      position: relative;
+      top: 5rem;
+    }
+  }
+}
