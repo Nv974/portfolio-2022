@@ -1,7 +1,7 @@
 <template>
   <div class="skills">
     <div class="skills__title">Les technologies</div>
-    <div style="display: flex ; justify-content: center ; gap: 5rem " >
+    <div class="skills__ctn" >
       <div class="skills__front">
         <div class="skills__front__label">
           Front-end

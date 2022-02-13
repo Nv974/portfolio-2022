@@ -1,7 +1,10 @@
 <template>
 <div class="coder">
   <div class="coder__content">
-    <img src="@/assets/images/projects/iphone.gif" alt="coder eats" height="600" >
+    <div>
+      <div class="coder__title" >Coder Eats</div>
+      <img src="@/assets/images/projects/iphone.gif" alt="coder eats">
+    </div>
     <div class="coder__content__description">{{ project.description }}</div>
   </div>
 </div>

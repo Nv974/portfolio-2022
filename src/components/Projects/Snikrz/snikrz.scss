@@ -1,26 +1,42 @@
+@import "src/assets/scss/abstracts/breakpoints";
+
 .snikrz {
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
   &__content {
     position: relative;
-    img {
-      z-index: 1;
-    }
-    &__background {
-      width: 800px;
-      height: 400px;
-      position: absolute;
-      top: 50px;
-      left: 50px;
-      z-index: -1;
-      background: linear-gradient(90deg, #BE6CE4 , #653DB6 );
-      transition: background 0.5s;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     img {
       width: 800px;
+      @include xl {
+        width: 650px;
+      }
+      @include lg {
+        width: 550px;
+      }
+      @include md {
+        width: 280px;
+      }
     }
     &__description {
       width: 800px;
       position: relative;
-      top: 5rem;
+      top: 2rem;
+      @include xl {
+        width: 650px;
+      }
+      @include lg {
+        width: 550px;
+      }
+      @include md {
+        width: 280px;
+      }
     }
   }
 }

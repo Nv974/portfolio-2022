@@ -1,3 +1,5 @@
+@import "src/assets/scss/abstracts/breakpoints";
+
 .skills {
   margin-top: 5rem;
   display: flex;
@@ -6,6 +8,19 @@
   &__title {
     font-size: 3rem;
     font-weight: bold;
+    @include xl {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__ctn {
+    display: flex ;
+    justify-content: center ;
+    gap: 5rem;
+    flex-wrap: wrap;
+    @include lg {
+      gap: 2rem;
+    }
   }
 
   &__back, &__front  {
@@ -17,6 +32,10 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    @include lg {
+      padding: 2.5rem;
+    }
+
 
     &__label{
       position: absolute;
@@ -27,6 +46,9 @@
       transform: translateY(-50%);
       border-radius: 100px;
       font-weight: bold;
+      @include lg {
+        font-size: 1rem;
+      }
     }
 
     &__technos{
