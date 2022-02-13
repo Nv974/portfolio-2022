@@ -1,19 +1,34 @@
 <template>
   <div id="app">
-    Vue App
-<!-- 3 <test></test>-->
+    <navbar />
+    <home />
+    <about />
+    <skills />
+    <projects />
+    <contact />
+    <footer>
+      Réalisé par Nicolas Vitry ©
+    </footer>
   </div>
 </template>
 
 <script>
-// 1 import Test from './components/Test/Test'
-console.log( '%c' + 'test', 'color:#f0f ; font-size: 1.3rem' );
-
+import Home from '@/components/Home/Home';
+import Navbar from '@/components/Navbar/Navbar';
+import About from '@/components/About/About';
+import Skills from '@/components/Skills/Skills';
+import Projects from '@/components/Projects/Projects';
+import Contact from '@/components/Contact/Contact';
 
 export default {
   name: 'App',
   components: {
-    // 2 Test
+    Navbar,
+    Home,
+    About,
+    Skills,
+    Projects,
+    Contact
   }
 }
 </script>

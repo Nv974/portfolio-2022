@@ -1,0 +1,53 @@
+.skills {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  &__back, &__front  {
+    border: 1px solid #7000FF;
+    padding: 3rem;
+    border-radius: 15px;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &__label{
+      position: absolute;
+      top: 0;
+      font-size: 1.2rem;
+      background-color: #29C2CB;
+      padding: 0.5rem 2rem;
+      transform: translateY(-50%);
+      border-radius: 100px;
+      font-weight: bold;
+    }
+
+    &__technos{
+      display: flex;
+      gap: 1rem;
+      width: 250px;
+      flex-wrap: wrap;
+
+      &__techno{
+        &__icon {
+          background-color: white;
+          padding: 15px;
+          height: 40px;
+          border-radius: 100px;
+          margin-bottom: 10px;
+
+          img {
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+}

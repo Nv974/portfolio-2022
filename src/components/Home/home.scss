@@ -1,0 +1,41 @@
+@import "src/assets/scss/abstracts/mixins";
+
+
+.home {
+display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: calc(100vh - 6rem);
+  &__text {
+
+    &__me {
+      font-size: 2rem;
+
+    }
+    text-align: start;
+
+    &__contact {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      &__button {
+        @include  custom-btn;
+        width: 12rem;
+
+      }
+      &__social {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        img {
+          height: 30px;
+        }
+      }
+    }
+  }
+
+  &__work{
+
+  }
+}

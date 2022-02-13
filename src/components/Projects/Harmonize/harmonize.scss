@@ -1,0 +1,23 @@
+.harmonize {
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    position: relative;
+    &__background {
+      width: 560px;
+      height: 315px;
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      z-index: -1;
+      background: linear-gradient(90deg, #BE6CE4 , #653DB6 );
+      transition: background 0.5s;
+    }
+    &__description {
+      width: 400px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 6rem;
+  margin: 0 auto;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  ul {
+    display: flex;
+    gap: 1.5rem;
+
+    a{
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: 0.3s;
+
+      &:hover {
+        color: #24e5f1;
+      }
+    }
+  }
+}

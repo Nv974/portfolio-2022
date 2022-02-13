@@ -1,0 +1,86 @@
+@import "src/assets/scss/abstracts/mixins";
+
+.contact {
+  width: 80%;
+  margin: 0 auto;
+  &__title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  &__content {
+    margin-top: 5rem;
+    display: flex;
+    &__left {
+      max-width: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      &__text {
+        margin-bottom: 5rem;
+        text-align: start;
+      }
+
+      &__phone , &__mail , &__map {
+        display: flex;
+        &__text{
+          text-align: start;
+          margin-left: 2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+    }
+    &__right {
+      padding: 2rem 0;
+      width : 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left:auto;
+      background: linear-gradient(45deg, #5A0790,#7000FF )  ;
+      border-radius: 1rem;
+
+      &__first, &__second , &__thirst, &__fourth {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        input, textarea {
+          width:40%;
+          margin: 0.5rem 0;
+          height: 2.4rem;
+          border-radius: 1rem;
+          border: none;
+        }
+
+        textarea {
+          width: calc(80% + 1rem) ;
+          height: 150px;
+        }
+
+      }
+
+      &__thirst {
+        input {
+          width: calc(80% + 1rem) ;
+        }
+      }
+
+
+
+      button {
+        @include custom-btn ;
+        margin-top: 1rem;
+        border: none;
+        width: 15rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        z-index: 0;
+      }
+
+    }
+  }
+
+}
