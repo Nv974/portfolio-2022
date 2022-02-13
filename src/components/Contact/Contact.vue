@@ -11,23 +11,23 @@
         </div>
         <div class="contact__content__left__phone">
           <img src="@/assets/icons/phone2.svg" alt="phone">
-          <div class="contact__content__left__phone__text" style="font-size: 1.2rem " >
+          <div class="contact__content__left__phone__text" >
             <div style="font-weight: bold" >Téléphone</div>
             <div>06 93 51 62 99</div>
           </div>
         </div>
         <div class="contact__content__left__mail">
           <img src="@/assets/icons/mail2.svg" alt="nv.nicolasvitry@gmail.com">
-          <div class="contact__content__left__mail__text" style="font-size: 1.2rem " >
+          <div class="contact__content__left__mail__text">
             <div style="font-weight: bold" >E-mail</div>
             <div>nv.nicolasvitry@gmail.com</div>
           </div>
         </div>
         <div class="contact__content__left__map">
           <img src="@/assets/icons/map2.svg" alt="lieu">
-          <div class="contact__content__left__map__text" style="font-size: 1.2rem " >
+          <div class="contact__content__left__map__text" >
             <div style="font-weight: bold" >E-mail</div>
-            <div>Saint-Joseph / Réunion / 97480</div>
+            <div>Saint-Joseph / Réunion </div>
           </div>
         </div>
         </div>

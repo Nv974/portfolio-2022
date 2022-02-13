@@ -1,15 +1,25 @@
 @import "src/assets/scss/abstracts/mixins";
+@import "src/assets/scss/abstracts/breakpoints";
 
 
 .home {
 display: flex;
   flex-direction: row-reverse;
+  justify-content: center;
   align-items: center;
   height: calc(100vh - 6rem);
+  @include md {
+    flex-direction: column;
+    align-items: center;
+    gap : 5rem
+  }
   &__text {
 
     &__me {
       font-size: 2rem;
+      @include xl {
+        font-size: 1.5rem;
+      }
 
     }
     text-align: start;
@@ -17,11 +27,16 @@ display: flex;
     &__contact {
       margin-top: 2rem;
       display: flex;
+      gap: 1rem;
       justify-content: space-between;
       &__button {
         @include  custom-btn;
         width: 12rem;
-
+        @include xl {
+          width: 10rem;
+          font-size: 0.9rem;
+          height: 3rem;
+        }
       }
       &__social {
         display: flex;
@@ -30,12 +45,23 @@ display: flex;
 
         img {
           height: 30px;
+          @include xl {
+            height: 20px;
+          }
         }
       }
     }
   }
 
   &__work{
+    img{
+      width: 50vw;
+      @include md {
+        width: 90vw;
+        position: relative;
+        right: 10vw;
+      }
 
+    }
   }
 }

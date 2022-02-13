@@ -1,13 +1,25 @@
-.blind {
+@import "src/assets/scss/abstracts/breakpoints";
 
+.blind {
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
   &__content {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    @include md {
+      flex-direction: column;
+    }
     &__description {
       width: 40%;
+      @include md {
+        width: 280px;
+      }
     }
   }
 }
