@@ -2,6 +2,7 @@
 @import "src/assets/scss/abstracts/breakpoints";
 
 .contact {
+  padding-top: 6rem;
   width: 80%;
   margin: 0 auto;
   @include xl {
@@ -74,8 +75,35 @@
       flex-direction: column;
       justify-content: center;
       margin-left:auto;
-      background: linear-gradient(45deg, #5A0790,#7000FF )  ;
+      background: linear-gradient(45deg, rgba(90, 7, 144, 0.7), rgba(112, 0, 255, 0.7))  ;
       border-radius: 1rem;
+      border: #7000FF 1px solid;
+      position: relative;
+
+      &__spinner {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        right: 50%;
+        bottom: 50%;
+        transform: translateX(50%) translateY(50%) ;
+
+
+        &::after {
+          content: "";
+          width: 20px;
+          height: 20px;
+          border: 5px solid #d9d9d9;
+          border-top-color: white;
+          border-radius: 50%;
+          animation: spin 1s linear infinite ;
+          @keyframes spin {
+            to {
+              transform: rotate(1turn) ;
+            }
+          }
+        }
+      }
 
       @include lg {
         width: 80%;
@@ -91,24 +119,61 @@
         display: flex;
         justify-content: center;
         gap: 1rem;
+        position: relative;
+
+        &__label {
+          &__name ,  &__email, &__phone , &__company, &__object, &__message {
+            position: absolute;
+            top: 1.6rem;
+            left: 11%;
+            color: #6d6d6d;
+            pointer-events: none;
+            transition: 0.3s;
+
+            &--focus {
+              transform: translateY(-30px) translateX(-10px)  ;
+              color: white;
+              font-size: 13px;
+              font-weight: bold;
+            }
+
+          }
+          &__email, &__company {
+            left: 53%;
+            @include sm {
+              left: 56%;
+            }
+          }
+        }
+
         input, textarea {
-          width:40%;
-          margin: 0.5rem 0;
-          height: 2.4rem;
-          border-radius: 1rem;
+          width: calc(40% - 2rem);
+          margin: 1rem 0;
+          height: 0.4rem;
+          border-radius: 10px;
           border: none;
+          color: black;
+          padding: 1rem;
+          &:focus {
+            outline: none;
+          }
+
+
         }
 
         textarea {
-          width: calc(80% + 1rem) ;
+          width: calc(80% - 1rem) ;
           height: 150px;
+          resize: none;
         }
 
       }
 
       &__thirst {
         input {
-          width: calc(80% + 1rem) ;
+          width: calc(80% - 1rem) ;
+          height: 0.4rem;
+          padding: 1rem;
         }
       }
 
@@ -122,9 +187,19 @@
         margin-left: 50%;
         transform: translateX(-50%);
         z-index: 0;
+        position: relative;
+        right: 0.2rem;
+        transition: 0.5s;
+
+
+        &:hover {
+          width: 15.5rem;
+
+        }
       }
 
     }
   }
 
 }
+

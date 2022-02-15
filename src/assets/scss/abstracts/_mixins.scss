@@ -1,10 +1,22 @@
 @mixin custom-btn {
-  background : linear-gradient(90deg , #da6cff,#923FFB) ;
+  background : linear-gradient(90deg , #571dc9,#923FFB) ;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 2rem;
+  border-radius: 4rem;
   font-size: 1.1rem;
   font-weight: bold;
   height: 3.5rem;
+  transition:  0.5s;
+  cursor: pointer;
+  position: relative;
+  right: 0;
+
+  &:hover {
+    transition: 0.3s;
+    background : linear-gradient(90deg , white  , #ffffff) ;
+    color: #7000FF ;
+    padding: 0 0.2rem;
+    right: 0.2rem;
+  }
 }
