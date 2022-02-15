@@ -10,7 +10,24 @@
     <div class="harmonize__content__description">
       {{ project.description }}
     </div>
-  </div>
+    <div class="harmonize__content__technos">
+      <div class="harmonize__content__technos__techno" >
+        <img src="@/assets/images/technos/react.png" alt="react">
+        <div>React</div>
+      </div>
+      <div class="harmonize__content__technos__techno" >
+        <img src="@/assets/images/technos/symfony.png" alt="symfony">
+        <div>Symfony</div>
+      </div>
+    </div>
+    <div class="harmonize__content__code" >
+      <a href="https://github.com/Nv974/Harmonize-front-Nicolas" target="_blank" >
+        <img src="@/assets/icons/github.svg" alt="code">
+      </a>
+      <div>Voir le code</div>
+    </div>
+
+    </div>
 </div>
 </template>
 

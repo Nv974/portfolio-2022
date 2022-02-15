@@ -5,6 +5,9 @@
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    @include md {
+      font-size: 1.5rem;
+    }
   }
   &__content {
     position: relative;
@@ -15,10 +18,42 @@
     @include md {
       flex-direction: column;
     }
+    iframe {
+      border-radius: 1rem;
+      @include sm {
+        height: 390px;
+      }
+    }
     &__description {
-      width: 40%;
+      width: 70%;
+      text-align: center;
       @include md {
         width: 280px;
+      }
+      @include sm {
+        font-size: 14px;
+      }
+    }
+
+    &__technos {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      &__techno {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        img {
+          width: 50px;
+          height: 50px;
+        }
+        @include sm {
+          img {
+            width: 40px;
+            height: 40px;
+          }
+        }
       }
     }
   }

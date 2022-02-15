@@ -13,9 +13,35 @@
     gap: 1rem;
     align-items: center;
     position: relative;
+    flex-direction: column;
+
+    &__code {
+      display: flex;
       flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      img {
+        filter: brightness(0);
+      }
+
+    }
+
+    &__technos {
+      display: flex;
+      gap: 1rem;
+      &__techno {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        img {
+          width: 50px;
+        }
+      }
+    }
 
     iframe {
+      border-radius: 1rem;
       @include md {
         width: 80vw;
         height: calc(80vw /1.7) ;

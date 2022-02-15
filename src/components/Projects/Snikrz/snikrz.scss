@@ -5,6 +5,9 @@
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    @include md {
+      font-size: 1.5rem;
+    }
   }
   &__content {
     position: relative;
@@ -13,6 +16,7 @@
     align-items: center;
 
     img {
+      border-radius: 0.8rem;
       width: 800px;
       @include xl {
         width: 650px;
@@ -21,9 +25,41 @@
         width: 550px;
       }
       @include md {
+        border-radius: 0.6rem;
         width: 280px;
       }
+      @include sm {
+        border-radius: 0.6rem;
+        width: 180px;
+      }
     }
+
+    &__technos {
+      position: relative;
+      top: 4rem;
+      display: flex;
+      gap: 2rem;
+      @include md {
+        top: 1rem;
+      }
+      &__techno {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        @include sm {
+          font-size: 12px;
+        }
+        img {
+          width: 50px;
+          @include sm {
+            width: 35px;
+          }
+        }
+      }
+    }
+
+
     &__description {
       width: 800px;
       position: relative;
@@ -35,7 +71,46 @@
         width: 550px;
       }
       @include md {
-        width: 280px;
+        display: none;
+      }
+    }
+
+    &__code {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      position: relative;
+      top: 6rem;
+      img {
+        filter: brightness(0);
+      }
+
+      &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          border-radius: 0;
+        }
+      }
+      @include md {
+        top: 2rem;
+      }
+      @include sm {
+        font-size: 12px;
+      }
+      img {
+        width: 35px;
+        @include sm {
+          width: 30px;
+        }
+      }
+      a {
+        width: 35px;
+        @include sm {
+          width: 30px;
+        }
       }
     }
   }

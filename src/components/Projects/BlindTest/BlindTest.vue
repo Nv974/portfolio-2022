@@ -14,8 +14,22 @@
         >
         </iframe>
       </div>
+      <div style="display: flex ; flex-direction: column ; gap: 1rem ; align-items: center " >
+        <div class="blind__content__description">{{ project.description }}</div>
+        <div class="blind__content__technos">
+          <div class="blind__content__technos__techno" >
+            <img src="@/assets/images/technos/react.png" alt="react">
+            <div>React Native</div>
+          </div>
+          <div class="blind__content__technos__techno" >
+            <a href="https://github.com/Nv974/blind-test"  target="_blank" >
+              <img src="@/assets/icons/github.svg" alt="github" style="filter: brightness(0)" >
+            </a>
+            <div>Voir le code</div>
+          </div>
+        </div>
+      </div>
 
-      <div class="blind__content__description">{{ project.description }}</div>
     </div>
   </div>
 </template>
